@@ -25,9 +25,9 @@
     .sourcebar{position:relative;z-index:1;margin-top:18px;display:flex;gap:18px;align-items:center;flex-wrap:wrap;padding-top:15px;border-top:1px solid rgba(255,255,255,.16);font-size:12px;color:#dcecf3}.sourcebar span{display:flex;gap:7px;align-items:center}.sourcebar b{color:#fff}
     .filters{margin:18px 0;background:var(--surface);border:1px solid rgba(19,105,168,.08);border-radius:var(--radius);padding:17px 18px;box-shadow:var(--shadow-soft)}
     .section-head{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:14px}.section-head h2{margin:0;font-size:17px;color:var(--navy);display:flex;align-items:center;gap:9px}.section-head small{color:var(--muted)}
-    .filter-grid{display:grid;grid-template-columns:repeat(8,minmax(125px,1fr));gap:11px;align-items:end}.field label{display:block;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.45px;color:var(--muted);margin:0 0 6px}.field input,.field select{width:100%;height:42px;border:1px solid var(--line);border-radius:11px;padding:0 11px;background:#fbfdff;color:var(--text);outline:none}.field input:focus,.field select:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(19,105,168,.1)}
+    .filter-grid{display:grid;grid-template-columns:repeat(9,minmax(120px,1fr));gap:11px;align-items:end}.field label{display:block;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.45px;color:var(--muted);margin:0 0 6px}.field input,.field select{width:100%;height:42px;border:1px solid var(--line);border-radius:11px;padding:0 11px;background:#fbfdff;color:var(--text);outline:none}.field input:focus,.field select:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(19,105,168,.1)}
     .preset-row{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}.preset{border:1px solid var(--line);background:#fff;color:var(--muted);border-radius:999px;padding:7px 11px;font-size:12px;font-weight:700}.preset.active{background:var(--navy);border-color:var(--navy);color:#fff}
-    .kpis{display:grid;grid-template-columns:repeat(6,minmax(165px,1fr));gap:14px;margin:0 0 18px}.kpi{position:relative;overflow:hidden;background:var(--surface);border-radius:var(--radius);padding:18px 18px 16px;min-height:128px;box-shadow:var(--shadow-soft);border:1px solid rgba(16,59,87,.06)}
+    .kpis{display:grid;grid-template-columns:repeat(7,minmax(150px,1fr));gap:14px;margin:0 0 18px}.kpi{position:relative;overflow:hidden;background:var(--surface);border-radius:var(--radius);padding:18px 18px 16px;min-height:128px;box-shadow:var(--shadow-soft);border:1px solid rgba(16,59,87,.06)}
     .kpi:before{content:"";position:absolute;left:0;top:0;width:5px;height:100%;background:var(--accent,var(--blue))}.kpi .label{font-size:11px;text-transform:uppercase;letter-spacing:.55px;font-weight:850;color:var(--muted);margin-bottom:12px}.kpi .value{font-size:clamp(27px,2.2vw,40px);font-weight:850;line-height:1;color:var(--navy)}.kpi .sub{margin-top:10px;font-size:12px;color:var(--muted);line-height:1.35}.kpi.red{--accent:var(--red)}.kpi.green{--accent:var(--green)}.kpi.yellow{--accent:var(--yellow)}.kpi.teal{--accent:var(--teal)}.kpi.orange{--accent:var(--orange)}
     .hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:16px;margin-bottom:16px}.card{background:var(--surface);border-radius:var(--radius);border:1px solid rgba(16,59,87,.07);box-shadow:var(--shadow-soft);padding:18px;min-width:0}.card-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-bottom:14px}.card-head h3{margin:0;color:var(--navy);font-size:16px}.card-head p{margin:4px 0 0;font-size:12px;color:var(--muted)}.badge{border-radius:999px;padding:6px 10px;font-size:11px;font-weight:850;white-space:nowrap}.badge.red{background:var(--red-soft);color:var(--red)}.badge.green{background:var(--green-soft);color:var(--green)}.badge.yellow{background:var(--amber-soft);color:#9a6700}
     .spotlight{height:100%;background:linear-gradient(145deg,#fff 0%,#fff8f1 100%);position:relative;overflow:hidden}.spotlight:after{content:"";position:absolute;width:210px;height:210px;border-radius:50%;right:-95px;bottom:-100px;background:rgba(214,56,63,.08)}.spot-label{font-size:11px;text-transform:uppercase;letter-spacing:.65px;color:var(--red);font-weight:900}.spot-name{font-size:clamp(22px,2.1vw,34px);line-height:1.12;color:var(--navy);font-weight:850;margin:14px 0}.spot-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;position:relative;z-index:1}.spot-stat{background:rgba(255,255,255,.72);border:1px solid #f1dfdd;border-radius:14px;padding:11px}.spot-stat b{display:block;color:var(--navy);font-size:19px}.spot-stat span{font-size:10px;color:var(--muted)}
@@ -36,49 +36,58 @@
     .donut-wrap{display:grid;grid-template-columns:160px 1fr;gap:20px;align-items:center}.donut{width:160px;height:160px;border-radius:50%;position:relative;box-shadow:inset 0 0 0 1px rgba(16,59,87,.05)}.donut:after{content:"";position:absolute;inset:32px;border-radius:50%;background:#fff;box-shadow:0 0 0 1px #edf1f5}.donut-center{position:absolute;inset:0;z-index:1;display:flex;align-items:center;justify-content:center;flex-direction:column}.donut-center b{font-size:27px;color:var(--navy)}.donut-center span{font-size:10px;color:var(--muted);text-transform:uppercase;font-weight:800}.donut-legend{display:grid;gap:8px}.donut-item{display:grid;grid-template-columns:10px 1fr auto;gap:8px;align-items:center;font-size:11px;border:0;background:transparent;text-align:left;color:var(--text);padding:3px}.donut-item:hover{background:#f5f8fb;border-radius:8px}.dot{width:9px;height:9px;border-radius:50%}
     .insights{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.insight{border-radius:16px;padding:15px;border:1px solid var(--line);background:linear-gradient(145deg,#fff,#f9fbfd);min-height:112px}.insight .icon{width:32px;height:32px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:#eaf3f8;color:var(--blue);font-weight:900;margin-bottom:10px}.insight strong{display:block;font-size:13px;color:var(--navy);margin-bottom:5px}.insight p{margin:0;color:var(--muted);font-size:12px;line-height:1.42}
     .impact-section{margin:0 0 16px}.impact-title{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;margin:0 2px 13px}.impact-title h2{margin:0;color:var(--navy);font-size:20px}.impact-title p{margin:5px 0 0;color:var(--muted);font-size:12px}.impact-kpis{display:grid;grid-template-columns:repeat(4,minmax(180px,1fr));gap:14px;margin-bottom:16px}.impact-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}.impact-note{margin-top:12px;padding:11px 13px;border-radius:12px;background:#f1f6fa;border:1px solid #dbe7ef;color:#526475;font-size:11px;line-height:1.45}.status-pill.inoperante{background:var(--red-soft);color:var(--red)}.status-pill.contingencia{background:var(--amber-soft);color:#8a6100}.status-pill.recuperado{background:var(--green-soft);color:var(--green)}.status-pill.validar-cadastro{background:#eef2f5;color:#526475}.equipment-table{min-width:1180px}
-    .table-card{margin-top:16px}.table-tools{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:14px;max-height:520px}.data-table{border-collapse:separate;border-spacing:0;width:100%;min-width:1260px;font-size:11px}.data-table th{position:sticky;top:0;z-index:2;background:var(--navy);color:#fff;text-align:left;padding:11px 10px;font-size:10px;text-transform:uppercase;letter-spacing:.35px}.data-table td{padding:9px 10px;border-bottom:1px solid #e8edf2;vertical-align:top}.data-table tr:nth-child(even) td{background:#f8fbfd}.data-table tr:hover td{background:#eef6fa}.status-pill{display:inline-flex;border-radius:999px;padding:5px 8px;font-size:10px;font-weight:850;white-space:nowrap}.status-pill.reprovado,.status-pill.divergente{background:var(--red-soft);color:var(--red)}.status-pill.conforme{background:var(--green-soft);color:var(--green)}.status-pill.condicional,.status-pill.pendente{background:var(--amber-soft);color:#8a6100}.status-pill.neutro{background:#eef2f5;color:var(--muted)}
+    .daily-summary{display:grid;grid-template-columns:minmax(210px,.55fr) minmax(320px,1.6fr) auto;gap:18px;align-items:center;margin:0 0 16px;background:linear-gradient(125deg,#fff 0%,#f7fbfe 66%,#fff6ee 100%)}.daily-heading small{display:block;color:var(--muted);font-size:11px;text-transform:uppercase;font-weight:850;letter-spacing:.45px}.daily-heading strong{display:block;margin-top:5px;color:var(--navy);font-size:19px}.daily-list{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.daily-chip{display:inline-flex;align-items:center;gap:6px;padding:7px 10px;border-radius:999px;background:var(--red-soft);color:var(--red);font-size:11px;font-weight:800}.daily-empty{font-size:13px;color:var(--green);font-weight:750}.daily-meta{display:block;width:100%;font-size:11px;color:var(--muted);margin-top:2px}
+    .table-card{margin-top:16px}.table-tools{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:14px;max-height:520px}.data-table{border-collapse:separate;border-spacing:0;width:100%;min-width:1260px;font-size:11px}.data-table th{position:sticky;top:0;z-index:2;background:var(--navy);color:#fff;text-align:left;padding:11px 10px;font-size:10px;text-transform:uppercase;letter-spacing:.35px}.data-table td{padding:9px 10px;border-bottom:1px solid #e8edf2;vertical-align:top}.data-table tr:nth-child(even) td{background:#f8fbfd}.data-table tr:hover td{background:#eef6fa}.status-pill{display:inline-flex;border-radius:999px;padding:5px 8px;font-size:10px;font-weight:850;white-space:nowrap}.status-pill.reprovado,.status-pill.divergente{background:var(--red-soft);color:var(--red)}.status-pill.conforme{background:var(--green-soft);color:var(--green)}.status-pill.condicional,.status-pill.pendente{background:var(--amber-soft);color:#8a6100}.status-pill.neutro{background:#eef2f5;color:var(--muted)}.action-text{margin-top:5px;max-width:290px;color:var(--muted);font-size:10px;line-height:1.35}
     .method{margin-top:16px}.method details{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}.method summary{list-style:none;padding:17px 18px;font-weight:850;color:var(--navy);cursor:pointer;display:flex;justify-content:space-between}.method summary::-webkit-details-marker{display:none}.method-content{padding:0 18px 18px;color:var(--muted);font-size:12px;line-height:1.55}.method-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.rule-table{border-collapse:collapse;width:100%;font-size:11px}.rule-table th,.rule-table td{border:1px solid var(--line);padding:8px;text-align:left}.rule-table th{background:#eef5f8;color:var(--navy)}.alert{margin-top:12px;padding:12px 14px;border-radius:12px;background:#fff7e1;border:1px solid #f0d899;color:#75520a;font-weight:650}
     .footer{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--muted);font-size:11px;padding:18px 4px}.empty{padding:36px 10px;text-align:center;color:var(--muted)}
     .toast{position:fixed;right:24px;bottom:24px;z-index:50;background:var(--navy);color:#fff;padding:14px 17px;border-radius:14px;box-shadow:0 16px 36px rgba(0,0,0,.24);max-width:420px;font-size:13px;opacity:0;transform:translateY(20px);pointer-events:none;transition:.25s}.toast.show{opacity:1;transform:none}.toast.error{background:#a52f36}
     .loading{position:fixed;inset:0;z-index:60;background:rgba(9,37,54,.38);backdrop-filter:blur(4px);display:none;align-items:center;justify-content:center}.loading.show{display:flex}.loader-box{background:#fff;border-radius:18px;padding:22px 26px;box-shadow:var(--shadow);text-align:center;color:var(--navy);font-weight:800}.spinner{width:36px;height:36px;border:4px solid #dbe8ef;border-top-color:var(--teal);border-radius:50%;animation:spin .8s linear infinite;margin:0 auto 12px}@keyframes spin{to{transform:rotate(360deg)}}
-    @media(max-width:1250px){.filter-grid{grid-template-columns:repeat(4,1fr)}.kpis{grid-template-columns:repeat(3,1fr)}.impact-kpis{grid-template-columns:repeat(2,1fr)}.insights{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:860px){.app{padding:10px}.topbar{border-radius:18px;padding:18px}.logo{border:0;padding:0}.brand-wrap{align-items:flex-start}.hero-grid,.charts-grid,.impact-grid,.method-grid{grid-template-columns:1fr}.filter-grid{grid-template-columns:repeat(2,1fr)}.kpis{grid-template-columns:repeat(2,1fr)}.donut-wrap{grid-template-columns:1fr}.donut{margin:auto}.spot-stats{grid-template-columns:1fr 1fr 1fr}}
+    @media(max-width:1250px){.filter-grid{grid-template-columns:repeat(4,1fr)}.kpis{grid-template-columns:repeat(4,1fr)}.impact-kpis{grid-template-columns:repeat(2,1fr)}.insights{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:860px){.app{padding:10px}.topbar{border-radius:18px;padding:18px}.logo{border:0;padding:0}.brand-wrap{align-items:flex-start}.hero-grid,.charts-grid,.impact-grid,.method-grid,.daily-summary{grid-template-columns:1fr}.filter-grid{grid-template-columns:repeat(2,1fr)}.kpis{grid-template-columns:repeat(2,1fr)}.donut-wrap{grid-template-columns:1fr}.donut{margin:auto}.spot-stats{grid-template-columns:1fr 1fr 1fr}}
     @media(max-width:540px){.top-actions,.button{width:100%}.filter-grid,.kpis,.impact-kpis,.insights{grid-template-columns:1fr}.hbar{grid-template-columns:minmax(120px,1.2fr) 1.5fr 38px}.sourcebar{gap:8px}.spot-stats{grid-template-columns:1fr}.title h1{font-size:23px}}
     @media print{body{background:#fff}.app{max-width:none;padding:0}.topbar,.filters,.card,.kpi{box-shadow:none}.top-actions,.preset-row,.table-tools{display:none}.table-wrap{max-height:none}.method details{break-inside:avoid}}
-  
-/* ===== LOGIN / CONTROLE DE IMPORTAÇÃO ===== */
-.login-overlay{
-  position:fixed; inset:0; z-index:99999;
-  display:none; align-items:center; justify-content:center;
-  background:rgba(0,0,0,.62); backdrop-filter:blur(4px);
-}
-.login-overlay.open{display:flex}
-.login-card{
-  width:min(390px, calc(100vw - 32px));
-  padding:28px; border-radius:16px;
-  background:var(--card-bg, #fff);
-  box-shadow:0 20px 60px rgba(0,0,0,.28);
-}
-.login-card h2{margin:0 0 8px}
-.login-card p{margin:0 0 20px; opacity:.72}
-.login-card label{display:block; margin:12px 0 6px; font-weight:600}
-.login-card input{
-  width:100%; box-sizing:border-box; padding:11px 12px;
-  border:1px solid #c9c9c9; border-radius:9px;
-  font:inherit;
-}
-.login-actions{display:flex; gap:10px; margin-top:18px}
-.login-actions button{flex:1}
-.login-error{display:none; margin-top:12px; color:#c62828; font-size:.92rem}
-.login-error.show{display:block}
-#logoutBtn{display:none}
-.import-locked{opacity:.55}
 
-</style>
+    .login-overlay{position:fixed;inset:0;z-index:100;background:rgba(9,37,54,.48);backdrop-filter:blur(5px);display:none;align-items:center;justify-content:center;padding:20px}
+    .login-overlay.show{display:flex}
+    .login-card{width:min(420px,100%);background:#fff;border-radius:22px;padding:26px;box-shadow:0 24px 70px rgba(0,0,0,.28);border:1px solid var(--line)}
+    .login-card h3{margin:0 0 6px;color:var(--navy);font-size:21px}
+    .login-card p{margin:0 0 20px;color:var(--muted);font-size:12px;line-height:1.45}
+    .login-field{margin-bottom:12px}
+    .login-field label{display:block;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.4px;color:var(--muted);margin-bottom:6px}
+    .login-field input{width:100%;height:44px;border:1px solid var(--line);border-radius:11px;padding:0 12px;outline:none}
+    .login-field input:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(19,105,168,.1)}
+    .login-actions{display:flex;gap:9px;justify-content:flex-end;margin-top:18px}
+    .login-error{display:none;margin-top:10px;padding:9px 11px;border-radius:10px;background:var(--red-soft);color:var(--red);font-size:11px;font-weight:700}
+    .login-error.show{display:block}
+
+  </style>
 </head>
 <body>
   <div class="loading" id="loading"><div class="loader-box"><div class="spinner"></div><div id="loadingText">Processando a base...</div></div></div>
   <div class="toast" id="toast"></div>
+
+  <div class="login-overlay" id="loginOverlay" aria-hidden="true">
+    <div class="login-card" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+      <h3 id="loginTitle">Acesso restrito</h3>
+      <p>Para importar uma nova base de dados, informe o usuário e a senha autorizados.</p>
+      <form id="loginForm">
+        <div class="login-field">
+          <label for="loginUser">Usuário</label>
+          <input id="loginUser" type="text" autocomplete="username" required>
+        </div>
+        <div class="login-field">
+          <label for="loginPass">Senha</label>
+          <input id="loginPass" type="password" autocomplete="current-password" required>
+        </div>
+        <div class="login-error" id="loginError">Usuário ou senha inválidos.</div>
+        <div class="login-actions">
+          <button type="button" class="button ghost" id="loginCancel">Cancelar</button>
+          <button type="submit" class="button primary">Entrar e importar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
   <input type="file" id="fileInput" accept=".csv,.xlsx" hidden>
   <input type="file" id="equipmentFileInput" accept=".csv,.xlsx" hidden>
   <main class="app">
@@ -114,27 +123,36 @@
         <div class="field"><label>Ação do procedimento</label><select id="procedureFilter"></select></div>
         <div class="field"><label>Conformidade</label><select id="conformityFilter"></select></div>
         <div class="field"><label>Equipamento</label><select id="equipmentFilter"></select></div>
+        <div class="field"><label>Empresa / fornecedor</label><select id="companyFilter"></select></div>
       </div>
       <div class="preset-row">
         <button class="preset active" data-range="all">Todo o período</button>
         <button class="preset" data-range="7">Últimos 7 dias</button>
         <button class="preset" data-range="30">Últimos 30 dias</button>
         <button class="preset" data-range="month">Mês mais recente</button>
+        <button class="preset" data-range="day">Último dia com dados</button>
       </div>
     </section>
 
     <section class="kpis">
       <article class="kpi"><div class="label">Avaliações válidas</div><div class="value" id="kpiTotal">0</div><div class="sub" id="kpiTotalSub">Linhas após filtros</div></article>
-      <article class="kpi red"><div class="label">Reprovações do sistema</div><div class="value" id="kpiReproved">0</div><div class="sub">Suspensão da atividade de risco</div></article>
+      <article class="kpi red"><div class="label">Reprovações — Ação Definida</div><div class="value" id="kpiReproved">0</div><div class="sub">A decisão efetivamente registrada</div></article>
       <article class="kpi orange"><div class="label">Taxa de reprovação</div><div class="value" id="kpiRate">0%</div><div class="sub">Reprovações ÷ avaliações válidas</div></article>
       <article class="kpi teal"><div class="label">Profissionais envolvidos</div><div class="value" id="kpiProfessionals">0</div><div class="sub">Com ao menos uma reprovação</div></article>
       <article class="kpi green"><div class="label">Conformes ao procedimento</div><div class="value" id="kpiConform">0</div><div class="sub" id="kpiConformSub">Sobre registros aplicáveis</div></article>
       <article class="kpi yellow"><div class="label">Pendentes / divergentes</div><div class="value" id="kpiAttention">0</div><div class="sub">Exigem validação ou complemento</div></article>
+      <article class="kpi red"><div class="label">Reprovações do último dia</div><div class="value" id="kpiDailyReproved">0</div><div class="sub" id="kpiDailySub">Data mais recente do recorte</div></article>
+    </section>
+
+    <section class="card daily-summary">
+      <div class="daily-heading"><small>Leitura diária</small><strong id="dailyTitle">Reprovações do dia</strong></div>
+      <div class="daily-list" id="dailyList"><span class="daily-empty">Sem dados.</span></div>
+      <button class="button ghost" id="dailyFilterBtn">Ver somente este dia</button>
     </section>
 
     <section class="hero-grid">
       <article class="card">
-        <div class="card-head"><div><h3>Evolução das avaliações e reprovações</h3><p>Contagem diária conforme o período filtrado</p></div><span class="badge green" id="trendBadge">—</span></div>
+        <div class="card-head"><div><h3>Evolução das avaliações e reprovações</h3><p>Reprovação calculada pela Ação Definida</p></div><span class="badge green" id="trendBadge">—</span></div>
         <div class="legend"><span><i style="background:#237bb3"></i>Avaliações</span><span><i style="background:#d6383f"></i>Reprovações</span></div>
         <div class="chart-area" id="lineChart"></div>
       </article>
@@ -176,7 +194,7 @@
       </div>
       <div class="stack">
         <article class="card"><div class="card-head"><div><h3>Composição das reprovações por nível</h3><p>Clique na legenda para aplicar o filtro de nível</p></div></div><div class="donut-wrap"><div class="donut" id="levelDonut"><div class="donut-center"><b id="donutTotal">0</b><span>reprovações</span></div></div><div id="levelLegend" class="donut-legend"></div></div></article>
-        <article class="card"><div class="card-head"><div><h3>Conformidade da ação sugerida</h3><p>Comparação entre sistema e critérios do procedimento</p></div></div><div id="conformityChart" class="status-list"></div></article>
+        <article class="card"><div class="card-head"><div><h3>Conformidade da ação definida</h3><p>Comparação entre a decisão registrada e os critérios do procedimento</p></div></div><div id="conformityChart" class="status-list"></div></article>
       </div>
     </section>
 
@@ -187,7 +205,7 @@
 
     <section class="card table-card">
       <div class="card-head"><div><h3>Registros que sustentam os indicadores</h3><p id="tableCount">—</p></div><div class="table-tools"><button class="button ghost" id="onlyReproved">Mostrar somente reprovações</button></div></div>
-      <div class="table-wrap"><table class="data-table"><thead><tr><th>Data</th><th>Colaborador</th><th>Equipamento vinculado</th><th>Nível</th><th>Banco</th><th>Ação sugerida</th><th>Ação esperada — procedimento</th><th>Conformidade</th><th>Ocorr. 7d</th><th>Ocorr. 5d</th><th>Preditor de risco</th></tr></thead><tbody id="detailBody"></tbody></table></div>
+      <div class="table-wrap"><table class="data-table"><thead><tr><th>Data</th><th>Colaborador</th><th>Equipamento vinculado</th><th>Nível</th><th>Banco</th><th>Ação definida</th><th>Ação esperada — procedimento</th><th>Conformidade</th><th>Ocorr. 7d</th><th>Ocorr. 5d</th><th>Preditor de risco</th></tr></thead><tbody id="detailBody"></tbody></table></div>
     </section>
 
     <section class="method">
@@ -210,12 +228,12 @@
               <tr><td>Nível</td><td>5 categorias padronizadas</td><td>Gatilho e composição</td></tr>
               <tr><td>Formação Banco de Dados</td><td>Completo × Descarte</td><td>Aplicabilidade do procedimento</td></tr>
               <tr><td>Tempo/Impulsos/Atenção/Concentração/Preditor</td><td>Normal × alterado</td><td>Diagnóstico das causas</td></tr>
-              <tr><td>Ação Sugerida</td><td>Classe de ação</td><td>Reprovação do sistema</td></tr>
+              <tr><td>Ação Definida</td><td>Classe de ação efetivamente registrada</td><td>Reprovação, ranking e impacto operacional</td></tr>
               <tr><td>Queixa/Sinalizador/Consecutividade</td><td>Sim, Não ou Não informado</td><td>Definição da ação do procedimento</td></tr>
               <tr><td>Operador/Motorista + TAG/Placa</td><td>Vínculo exato pelo nome completo</td><td>Impacto operacional por equipamento</td></tr>
             </tbody></table></div>
           </div>
-          <div class="alert"><b>Atenção:</b> as janelas de 5 e 7 dias medem recorrência; não representam a duração da suspensão. A suspensão é da atividade crítica/de risco, com retorno conforme reavaliação, intrajornada ou conduta médica prevista no fluxo. O equipamento só é classificado como inoperante quando todos os operadores cadastrados estão bloqueados na última avaliação disponível.</div>
+          <div class="alert"><b>Atenção:</b> todas as reprovações, rankings e impactos deste painel usam exclusivamente a <b>Ação Definida</b>; a Ação Sugerida permanece apenas como referência de auditoria. As janelas de 5 e 7 dias medem recorrência e não representam a duração da suspensão. A suspensão é da atividade crítica/de risco, com retorno conforme reavaliação, intrajornada ou conduta médica prevista no fluxo. O equipamento só é classificado como inoperante quando todos os operadores cadastrados estão bloqueados na última avaliação disponível.</div>
         </div>
       </details>
     </section>
@@ -503,7 +521,7 @@ https://github.com/nodeca/pako/blob/main/LICENSE
   }
 
   function isBlockingRecord(record) {
-    return !!record && (record.reprovado || String(record.classeProcedimento || "").indexOf("SUSPENDER") === 0);
+    return !!record && record.reprovado;
   }
 
   function uniqueValues(values) {
@@ -516,17 +534,22 @@ https://github.com/nodeca/pako/blob/main/LICENSE
     });
   }
 
-  function computeEquipmentImpact(scopeRecords, allRecords, equipmentRows, asOfEnd, equipmentFilter) {
+  function computeEquipmentImpact(scopeRecords, allRecords, equipmentRows, asOfEnd, equipmentFilter, supplierFilter) {
     equipmentRows = equipmentRows || [];
     allRecords = allRecords || [];
     scopeRecords = scopeRecords || [];
     attachEquipment(allRecords, equipmentRows);
     if (scopeRecords !== allRecords) attachEquipment(scopeRecords, equipmentRows);
+    var selectedEquipmentRows = equipmentRows.filter(function (equipment) {
+      if (equipmentFilter && equipmentFilter !== "Todos" && equipment.label !== equipmentFilter) return false;
+      if (supplierFilter && supplierFilter !== "Todos" && equipment.fornecedor !== supplierFilter) return false;
+      return true;
+    });
 
     var namesByKey = {};
     allRecords.forEach(function (record) { namesByKey[normalizePerson(record.usuario)] = record.usuario; });
     var groups = {};
-    equipmentRows.forEach(function (row) {
+    selectedEquipmentRows.forEach(function (row) {
       if (!groups[row.key]) groups[row.key] = { key: row.key, label: row.label, tipo: row.tipo, tag: row.tag, placa: row.placa, fornecedor: row.fornecedor, turno: row.turno, links: [] };
       groups[row.key].links.push(row);
     });
@@ -544,7 +567,11 @@ https://github.com/nodeca/pako/blob/main/LICENSE
     var rejectedEventCount = {};
     var blockedNames = {};
     scopeRecords.filter(isBlockingRecord).forEach(function (record) {
-      (record.equipamentos || []).filter(function (equipment) { return !equipmentFilter || equipmentFilter === "Todos" || equipment.label === equipmentFilter; }).forEach(function (equipment) {
+      (record.equipamentos || []).filter(function (equipment) {
+        if (equipmentFilter && equipmentFilter !== "Todos" && equipment.label !== equipmentFilter) return false;
+        if (supplierFilter && supplierFilter !== "Todos" && equipment.fornecedor !== supplierFilter) return false;
+        return true;
+      }).forEach(function (equipment) {
         eventCount[equipment.key] = (eventCount[equipment.key] || 0) + 1;
         if (record.reprovado) rejectedEventCount[equipment.key] = (rejectedEventCount[equipment.key] || 0) + 1;
         if (!blockedNames[equipment.key]) blockedNames[equipment.key] = {};
@@ -594,15 +621,15 @@ https://github.com/nodeca/pako/blob/main/LICENSE
     var impactedItems = items.filter(function (item) { return item.impactado; });
     var currentBlockedNames = {};
     impactedItems.forEach(function (item) { item.bloqueadosAtuais.forEach(function (name) { currentBlockedNames[normalizePerson(name)] = name; }); });
-    var mappedLinks = equipmentRows.filter(function (row) { return !!namesByKey[row.operatorKey]; }).length;
+    var mappedLinks = selectedEquipmentRows.filter(function (row) { return !!namesByKey[row.operatorKey]; }).length;
     var statusMap = {};
     impactedItems.forEach(function (item) { increment(statusMap, item.statusOperacional); });
     return {
       totalEquipment: items.length,
-      totalLinks: equipmentRows.length,
+      totalLinks: selectedEquipmentRows.length,
       mappedLinks: mappedLinks,
-      unmappedLinks: equipmentRows.length - mappedLinks,
-      coverage: equipmentRows.length ? mappedLinks / equipmentRows.length : 0,
+      unmappedLinks: selectedEquipmentRows.length - mappedLinks,
+      coverage: selectedEquipmentRows.length ? mappedLinks / selectedEquipmentRows.length : 0,
       impacted: impactedItems.length,
       inoperative: impactedItems.filter(function (item) { return item.statusOperacional === "INOPERANTE"; }).length,
       contingency: impactedItems.filter(function (item) { return item.statusOperacional === "CONTINGÊNCIA"; }).length,
@@ -613,7 +640,7 @@ https://github.com/nodeca/pako/blob/main/LICENSE
       statuses: sortedEntries(statusMap),
       items: items,
       impactedItems: impactedItems,
-      unmatchedOperators: equipmentRows.filter(function (row) { return !namesByKey[row.operatorKey]; })
+      unmatchedOperators: selectedEquipmentRows.filter(function (row) { return !namesByKey[row.operatorKey]; })
     };
   }
 
@@ -684,8 +711,7 @@ https://github.com/nodeca/pako/blob/main/LICENSE
     });
 
     records.forEach(function (record) {
-      var providedSystem = clean(pick(record._map, ALIASES.classeSistema));
-      record.classeSistema = providedSystem || classifySystem(record.acaoSugerida);
+      record.classeSistema = classifySystem(record.acaoDefinida);
       record.reprovado = record.valid && record.classeSistema.indexOf("SUSPENDER") === 0;
       record.classeProcedimento = expectedProcedure(record);
       record.acaoProcedimento = procedureAction(record.classeProcedimento);
@@ -711,6 +737,7 @@ https://github.com/nodeca/pako/blob/main/LICENSE
       if (filters.procedimento && filters.procedimento !== "Todos" && record.classeProcedimento !== filters.procedimento) return false;
       if (filters.conformidade && filters.conformidade !== "Todos" && record.conformidade !== filters.conformidade) return false;
       if (filters.equipamento && filters.equipamento !== "Todos" && !(record.equipamentos || []).some(function (equipment) { return equipment.label === filters.equipamento; })) return false;
+      if (filters.fornecedor && filters.fornecedor !== "Todos" && !(record.equipamentos || []).some(function (equipment) { return equipment.fornecedor === filters.fornecedor; })) return false;
       return true;
     });
   }
@@ -777,6 +804,12 @@ https://github.com/nodeca/pako/blob/main/LICENSE
     var minDate = dates.length ? new Date(Math.min.apply(null, dates.map(function (d) { return d.getTime(); }))) : null;
     var maxDate = dates.length ? new Date(Math.max.apply(null, dates.map(function (d) { return d.getTime(); }))) : null;
     var timeline = Object.keys(timelineMap).sort().map(function (key) { return timelineMap[key]; });
+    var latestDayKey = maxDate ? dateKey(maxDate) : "";
+    var latestDayRecords = latestDayKey ? records.filter(function (record) { return record.data && dateKey(record.data) === latestDayKey; }) : [];
+    var latestDayRejected = latestDayRecords.filter(function (record) { return record.reprovado; });
+    var latestDayProfessionals = uniqueValues(latestDayRejected.map(function (record) { return record.usuario; }));
+    var previousTimelineDay = timeline.length > 1 ? timeline[timeline.length - 2] : null;
+    var latestDayTimeline = timeline.length ? timeline[timeline.length - 1] : null;
     var criticalProcedure = records.filter(function (record) { return record.classeProcedimento.indexOf("SUSPENDER") === 0; }).length;
     var pending = records.filter(function (record) { return record.conformidade === "PENDENTE"; }).length;
     var divergents = records.filter(function (record) { return record.conformidade === "DIVERGENTE"; }).length;
@@ -802,6 +835,16 @@ https://github.com/nodeca/pako/blob/main/LICENSE
       conformity: sortedEntries(conformityMap),
       actions: sortedEntries(actionMap),
       timeline: timeline,
+      latestDay: {
+        date: latestDayKey,
+        total: latestDayRecords.length,
+        reprovados: latestDayRejected.length,
+        rate: latestDayRecords.length ? latestDayRejected.length / latestDayRecords.length : 0,
+        professionals: latestDayProfessionals,
+        previousDate: previousTimelineDay ? previousTimelineDay.date : "",
+        previousReprovados: previousTimelineDay ? previousTimelineDay.reprovados : 0,
+        delta: latestDayTimeline && previousTimelineDay ? latestDayTimeline.reprovados - previousTimelineDay.reprovados : null
+      },
       minDate: minDate,
       maxDate: maxDate
     };
@@ -942,7 +985,7 @@ https://github.com/nodeca/pako/blob/main/LICENSE
     function loading(show,text){$("loading").classList.toggle("show",!!show);if(text)$("loadingText").textContent=text}
     function distinct(list){return Array.from(new Set(list.filter(Boolean))).sort(function(a,b){return a.localeCompare(b,"pt-BR")})}
     function setOptions(id,values){var el=$(id),old=el.value;el.innerHTML='<option value="Todos">Todos</option>'+distinct(values).map(function(v){return '<option value="'+esc(v)+'">'+esc(v)+'</option>'}).join("");if(Array.from(el.options).some(function(o){return o.value===old}))el.value=old}
-    function currentFilters(){return {start:$("startDate").value,end:$("endDate").value,usuario:$("userFilter").value,nivel:$("levelFilter").value,banco:$("bankFilter").value,procedimento:$("procedureFilter").value,conformidade:$("conformityFilter").value,equipamento:$("equipmentFilter").value}}
+    function currentFilters(){return {start:$("startDate").value,end:$("endDate").value,usuario:$("userFilter").value,nivel:$("levelFilter").value,banco:$("bankFilter").value,procedimento:$("procedureFilter").value,conformidade:$("conformityFilter").value,equipamento:$("equipmentFilter").value,fornecedor:$("companyFilter").value}}
     function setPresetActive(range){document.querySelectorAll(".preset").forEach(function(btn){btn.classList.toggle("active",btn.dataset.range===range)})}
 
     function loadRows(rows,fileName){
@@ -950,14 +993,14 @@ https://github.com/nodeca/pako/blob/main/LICENSE
       Core.attachEquipment(records,equipmentRows);
       sourceName=fileName||"Base importada";sourceUpdated=new Date();onlyReprovedMode=false;
       var all=Core.computeMetrics(records);$("startDate").min=isoDate(all.minDate);$("startDate").max=isoDate(all.maxDate);$("endDate").min=isoDate(all.minDate);$("endDate").max=isoDate(all.maxDate);$("startDate").value=isoDate(all.minDate);$("endDate").value=isoDate(all.maxDate);
-      setOptions("userFilter",records.map(function(r){return r.usuario}));setOptions("levelFilter",records.map(function(r){return r.nivel}));setOptions("bankFilter",records.map(function(r){return r.banco}));setOptions("procedureFilter",records.map(function(r){return r.classeProcedimento}));setOptions("conformityFilter",records.map(function(r){return r.conformidade}));setOptions("equipmentFilter",equipmentRows.map(function(r){return r.label}));
-      ["userFilter","levelFilter","bankFilter","procedureFilter","conformityFilter","equipmentFilter"].forEach(function(id){$(id).value="Todos"});
+      setOptions("userFilter",records.map(function(r){return r.usuario}));setOptions("levelFilter",records.map(function(r){return r.nivel}));setOptions("bankFilter",records.map(function(r){return r.banco}));setOptions("procedureFilter",records.map(function(r){return r.classeProcedimento}));setOptions("conformityFilter",records.map(function(r){return r.conformidade}));setOptions("equipmentFilter",equipmentRows.map(function(r){return r.label}));setOptions("companyFilter",equipmentRows.map(function(r){return r.fornecedor}));
+      ["userFilter","levelFilter","bankFilter","procedureFilter","conformityFilter","equipmentFilter","companyFilter"].forEach(function(id){$(id).value="Todos"});
       setPresetActive("all");render();
     }
 
     function loadEquipmentRows(rows,fileName){
       var next=Core.buildEquipmentRows(rows);if(!next.length)throw new Error("A base não contém vínculos válidos entre operador e equipamento.");
-      equipmentRows=next;equipmentSourceName=fileName||"Base de equipamentos";sourceUpdated=new Date();Core.attachEquipment(records,equipmentRows);setOptions("equipmentFilter",equipmentRows.map(function(r){return r.label}));$("equipmentFilter").value="Todos";render();
+      equipmentRows=next;equipmentSourceName=fileName||"Base de equipamentos";sourceUpdated=new Date();Core.attachEquipment(records,equipmentRows);setOptions("equipmentFilter",equipmentRows.map(function(r){return r.label}));setOptions("companyFilter",equipmentRows.map(function(r){return r.fornecedor}));$("equipmentFilter").value="Todos";$("companyFilter").value="Todos";render();
     }
 
     function trendInfo(filtered,metrics){
@@ -1002,7 +1045,14 @@ https://github.com/nodeca/pako/blob/main/LICENSE
 
     function pillClass(value){var t=Core.normalizeText(value);if(t.indexOf("inoperante")>=0)return"inoperante";if(t.indexOf("contingencia")>=0)return"contingencia";if(t.indexOf("recuperado")>=0)return"recuperado";if(t.indexOf("validar cadastro")>=0)return"validar-cadastro";if(t.indexOf("reprov")>=0)return"reprovado";if(t.indexOf("diverg")>=0)return"divergente";if(t.indexOf("conforme")>=0)return"conforme";if(t.indexOf("condicional")>=0)return"condicional";if(t.indexOf("pendente")>=0)return"pendente";return"neutro"}
     function renderTable(filtered){var view=(onlyReprovedMode?filtered.filter(function(r){return r.reprovado}):filtered).slice().sort(function(a,b){return (b.data?b.data.getTime():0)-(a.data?a.data.getTime():0)});$("tableCount").textContent="Exibindo "+n(Math.min(100,view.length))+" de "+n(view.length)+" registros no recorte";$("onlyReproved").textContent=onlyReprovedMode?"Mostrar todos":"Mostrar somente reprovações";
-      $("detailBody").innerHTML=view.slice(0,100).map(function(r){var equipment=(r.equipamentos||[]).map(function(e){return e.label}).join("; ")||"Sem vínculo";return '<tr><td>'+esc(fmtDateTime(r.data))+'</td><td><b>'+esc(r.usuario)+'</b></td><td>'+esc(equipment)+'</td><td>'+esc(r.nivel)+'</td><td>'+esc(r.banco)+'</td><td><span class="status-pill '+(r.reprovado?'reprovado':'neutro')+'">'+esc(r.classeSistema)+'</span></td><td>'+esc(r.acaoProcedimento)+'</td><td><span class="status-pill '+pillClass(r.conformidade)+'">'+esc(r.conformidade)+'</span></td><td>'+esc(r.ocorrencias7==null?'—':r.ocorrencias7)+'</td><td>'+esc(r.ocorrencias5==null?'—':r.ocorrencias5)+'</td><td>'+esc(r.preditorRisco||'—')+'</td></tr>'}).join("")||'<tr><td colspan="11" class="empty">Nenhum registro localizado.</td></tr>'
+      $("detailBody").innerHTML=view.slice(0,100).map(function(r){var equipment=(r.equipamentos||[]).map(function(e){return e.label}).join("; ")||"Sem vínculo";return '<tr><td>'+esc(fmtDateTime(r.data))+'</td><td><b>'+esc(r.usuario)+'</b></td><td>'+esc(equipment)+'</td><td>'+esc(r.nivel)+'</td><td>'+esc(r.banco)+'</td><td><span class="status-pill '+(r.reprovado?'reprovado':'neutro')+'">'+esc(r.classeSistema)+'</span><div class="action-text">'+esc(r.acaoDefinida||"Não informada")+'</div></td><td>'+esc(r.acaoProcedimento)+'</td><td><span class="status-pill '+pillClass(r.conformidade)+'">'+esc(r.conformidade)+'</span></td><td>'+esc(r.ocorrencias7==null?'—':r.ocorrencias7)+'</td><td>'+esc(r.ocorrencias5==null?'—':r.ocorrencias5)+'</td><td>'+esc(r.preditorRisco||'—')+'</td></tr>'}).join("")||'<tr><td colspan="11" class="empty">Nenhum registro localizado.</td></tr>'
+    }
+
+    function renderDaily(metrics){
+      var day=metrics.latestDay,date=day.date?Core.parseDate(day.date):null;$("kpiDailyReproved").textContent=n(day.reprovados);$("kpiDailySub").textContent=date?fmtDate(date)+" · "+n(day.total)+" avaliações":"Sem data no recorte";$("dailyTitle").textContent=date?"Reprovações de "+fmtDate(date):"Reprovações do dia";$("dailyFilterBtn").dataset.date=day.date||"";$("dailyFilterBtn").disabled=!day.date;$("dailyFilterBtn").textContent=date?"Ver somente "+fmtDate(date):"Sem dia disponível";
+      var comparison=day.delta==null?"":(day.delta===0?"Mesmo número do dia anterior":(day.delta>0?"+":"")+n(day.delta)+" frente a "+fmtDate(Core.parseDate(day.previousDate)));
+      if(day.professionals.length){$("dailyList").innerHTML=day.professionals.map(function(name){return '<button class="daily-chip" data-daily-user="'+esc(name)+'">● '+esc(name)+'</button>'}).join("")+'<span class="daily-meta">'+n(day.reprovados)+" reprovação(ões) · "+pct(day.rate)+(comparison?" · "+esc(comparison):"")+"</span>";}else{$("dailyList").innerHTML='<span class="daily-empty">Nenhuma reprovação pela Ação Definida.</span><span class="daily-meta">'+n(day.total)+" avaliações no dia"+(comparison?" · "+esc(comparison):"")+"</span>";}
+      document.querySelectorAll("[data-daily-user]").forEach(function(el){el.addEventListener("click",function(){$("userFilter").value=el.dataset.dailyUser;$("startDate").value=day.date;$("endDate").value=day.date;setPresetActive("day");render()})});
     }
 
     function equipmentBars(items){
@@ -1020,12 +1070,12 @@ https://github.com/nodeca/pako/blob/main/LICENSE
     }
 
     function render(){
-      var filters=currentFilters(),filtered=Core.filterRecords(records,filters),metrics=Core.computeMetrics(filtered),all=Core.computeMetrics(records),trend=trendInfo(filtered,metrics),equipmentImpact=Core.computeEquipmentImpact(filtered,records,equipmentRows,filters.end||all.maxDate,filters.equipamento);
+      var filters=currentFilters(),filtered=Core.filterRecords(records,filters),metrics=Core.computeMetrics(filtered),all=Core.computeMetrics(records),trend=trendInfo(filtered,metrics),equipmentImpact=Core.computeEquipmentImpact(filtered,records,equipmentRows,filters.end||all.maxDate,filters.equipamento,filters.fornecedor);
       $("sourceName").textContent=sourceName;$("sourcePeriod").textContent=fmtDate(all.minDate)+" a "+fmtDate(all.maxDate);$("updatedAt").textContent=fmtDateTime(sourceUpdated);$("loadedCount").textContent=n(records.length);$("equipmentSource").textContent=n(equipmentRows.length)+" vínculos · "+equipmentSourceName;
       $("kpiTotal").textContent=n(metrics.total);$("kpiTotalSub").textContent=n(metrics.applicable)+" registros com banco completo";$("kpiReproved").textContent=n(metrics.reprovados);$("kpiRate").textContent=pct(metrics.reproRate);$("kpiProfessionals").textContent=n(metrics.affectedProfessionals);$("kpiConform").textContent=n(metrics.conformes);$("kpiConformSub").textContent=pct(metrics.conformRate)+" dos aplicáveis";$("kpiAttention").textContent=n(metrics.pending+metrics.divergents);
       $("trendBadge").textContent=trend.text;$("trendBadge").className="badge "+trend.className;$("lineChart").innerHTML=lineChart(metrics.timeline);
-      var top=metrics.topProfessional,topEquipment=top?equipmentRows.filter(function(item){return item.operatorKey===Core.normalizePerson(top.label)}).map(function(item){return item.label}).join("; "):"";$("spotName").textContent=top?top.label:"Sem reprovações";$("spotReproved").textContent=top?n(top.reprovados):"0";$("spotRate").textContent=top?pct(top.rate):"0%";$("spotLast").textContent=top?fmtDate(top.last):"—";$("spotAction").textContent=top?"Priorizar abordagem e validar o impacto operacional. Equipamento: "+(topEquipment||"sem vínculo seguro")+". Nível predominante: "+top.mainLevel+".":"Nenhuma suspensão sugerida no recorte selecionado.";
-      $("rankingChart").innerHTML=barList(metrics.ranking.slice(0,10),"linear-gradient(90deg,#d6383f,#ef7165)",true);$("factorChart").innerHTML=barList(metrics.factors,"linear-gradient(90deg,#536b7c,#8fa1ae)",false);donut(metrics.levels,metrics.reprovados);$("conformityChart").innerHTML=barList(metrics.conformity.slice(0,6),"linear-gradient(90deg,#237bb3,#60a5ce)",false);renderEquipmentImpact(filtered,equipmentImpact);renderInsights(filtered,metrics,trend);renderTable(filtered);
+      var top=metrics.topProfessional,topEquipment=top?equipmentRows.filter(function(item){return item.operatorKey===Core.normalizePerson(top.label)}).map(function(item){return item.label}).join("; "):"";$("spotName").textContent=top?top.label:"Sem reprovações";$("spotReproved").textContent=top?n(top.reprovados):"0";$("spotRate").textContent=top?pct(top.rate):"0%";$("spotLast").textContent=top?fmtDate(top.last):"—";$("spotAction").textContent=top?"Priorizar abordagem e validar o impacto operacional. Equipamento: "+(topEquipment||"sem vínculo seguro")+". Nível predominante: "+top.mainLevel+".":"Nenhuma suspensão registrada na Ação Definida no recorte selecionado.";
+      $("rankingChart").innerHTML=barList(metrics.ranking.slice(0,10),"linear-gradient(90deg,#d6383f,#ef7165)",true);$("factorChart").innerHTML=barList(metrics.factors,"linear-gradient(90deg,#536b7c,#8fa1ae)",false);donut(metrics.levels,metrics.reprovados);$("conformityChart").innerHTML=barList(metrics.conformity.slice(0,6),"linear-gradient(90deg,#237bb3,#60a5ce)",false);renderDaily(metrics);renderEquipmentImpact(filtered,equipmentImpact);renderInsights(filtered,metrics,trend);renderTable(filtered);
       document.querySelectorAll("[data-user]").forEach(function(el){el.addEventListener("click",function(){$("userFilter").value=el.dataset.user;render();window.scrollTo({top:0,behavior:"smooth"})})});document.querySelectorAll("[data-level]").forEach(function(el){el.addEventListener("click",function(){$("levelFilter").value=el.dataset.level;render();window.scrollTo({top:0,behavior:"smooth"})})});
     }
 
@@ -1039,157 +1089,63 @@ https://github.com/nodeca/pako/blob/main/LICENSE
     }
     async function importFile(file){loading(true,"Lendo "+file.name+"...");try{var lower=file.name.toLowerCase(),rows;if(lower.endsWith(".csv"))rows=Core.matrixToObjects(Core.parseCSV(await file.text()));else if(lower.endsWith(".xlsx"))rows=await readXlsx(file,"readiness");else throw new Error("Formato não suportado. Utilize CSV ou XLSX.");loadRows(rows,file.name);showToast("Base importada: "+n(records.length)+" registros processados.");}catch(error){console.error(error);showToast(error.message||"Não foi possível importar a base.",true)}finally{loading(false);$("fileInput").value=""}}
     async function importEquipmentFile(file){loading(true,"Atualizando vínculos de equipamentos...");try{var lower=file.name.toLowerCase(),rows;if(lower.endsWith(".csv"))rows=Core.equipmentMatrixToObjects(Core.parseCSV(await file.text()));else if(lower.endsWith(".xlsx"))rows=await readXlsx(file,"equipment");else throw new Error("Formato não suportado. Utilize CSV ou XLSX.");loadEquipmentRows(rows,file.name);showToast("Vínculos atualizados: "+n(equipmentRows.length)+" registros processados.");}catch(error){console.error(error);showToast(error.message||"Não foi possível atualizar os equipamentos.",true)}finally{loading(false);$("equipmentFileInput").value=""}}
-    function exportCSV(){var filtered=Core.filterRecords(records,currentFilters());if(onlyReprovedMode)filtered=filtered.filter(function(r){return r.reprovado});var headers=["Data de Execução","Usuário","Equipamento vinculado","Nível","Cargo","Banco de Dados","Ação Sugerida","Classe Sistema","Ação Esperada Procedimento","Classe Procedimento","Conformidade","Ocorrências 7 dias","Ocorrências 5 dias","Preditor de Risco"];function q(v){return '"'+String(v==null?"":v).replace(/"/g,'""')+'"'}var lines=[headers.map(q).join(";")].concat(filtered.map(function(r){return [fmtDateTime(r.data),r.usuario,(r.equipamentos||[]).map(function(e){return e.label}).join("; "),r.nivel,r.cargo,r.banco,r.acaoSugerida,r.classeSistema,r.acaoProcedimento,r.classeProcedimento,r.conformidade,r.ocorrencias7,r.ocorrencias5,r.preditorRisco].map(q).join(";")}));var blob=new Blob(["\ufeff"+lines.join("\r\n")],{type:"text/csv;charset=utf-8"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="PRONTOS_filtrado_"+new Date().toISOString().slice(0,10)+".csv";a.click();setTimeout(function(){URL.revokeObjectURL(url)},1000)}
+    function exportCSV(){var filtered=Core.filterRecords(records,currentFilters());if(onlyReprovedMode)filtered=filtered.filter(function(r){return r.reprovado});var headers=["Data de Execução","Usuário","Equipamento vinculado","Nível","Cargo","Banco de Dados","Ação Definida","Ação Sugerida (referência)","Classificação da Ação Definida","Ação Esperada Procedimento","Classe Procedimento","Conformidade","Ocorrências 7 dias","Ocorrências 5 dias","Preditor de Risco"];function q(v){return '"'+String(v==null?"":v).replace(/"/g,'""')+'"'}var lines=[headers.map(q).join(";")].concat(filtered.map(function(r){return [fmtDateTime(r.data),r.usuario,(r.equipamentos||[]).map(function(e){return e.label}).join("; "),r.nivel,r.cargo,r.banco,r.acaoDefinida,r.acaoSugerida,r.classeSistema,r.acaoProcedimento,r.classeProcedimento,r.conformidade,r.ocorrencias7,r.ocorrencias5,r.preditorRisco].map(q).join(";")}));var blob=new Blob(["\ufeff"+lines.join("\r\n")],{type:"text/csv;charset=utf-8"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="PRONTOS_filtrado_"+new Date().toISOString().slice(0,10)+".csv";a.click();setTimeout(function(){URL.revokeObjectURL(url)},1000)}
 
-    ["startDate","endDate","userFilter","levelFilter","bankFilter","procedureFilter","conformityFilter","equipmentFilter"].forEach(function(id){$(id).addEventListener("change",function(){setPresetActive("");render()})});
-    document.querySelectorAll(".preset").forEach(function(btn){btn.addEventListener("click",function(){var all=Core.computeMetrics(records),max=all.maxDate,min=all.minDate,start=min;if(btn.dataset.range==="7")start=new Date(max.getTime()-6*86400000);if(btn.dataset.range==="30")start=new Date(max.getTime()-29*86400000);if(btn.dataset.range==="month")start=new Date(max.getFullYear(),max.getMonth(),1);$("startDate").value=isoDate(start);$("endDate").value=isoDate(max);setPresetActive(btn.dataset.range);render()})});
-    $("clearFilters").addEventListener("click",function(){var all=Core.computeMetrics(records);$("startDate").value=isoDate(all.minDate);$("endDate").value=isoDate(all.maxDate);["userFilter","levelFilter","bankFilter","procedureFilter","conformityFilter","equipmentFilter"].forEach(function(id){$(id).value="Todos"});onlyReprovedMode=false;setPresetActive("all");render()});
+    ["startDate","endDate","userFilter","levelFilter","bankFilter","procedureFilter","conformityFilter","equipmentFilter","companyFilter"].forEach(function(id){$(id).addEventListener("change",function(){setPresetActive("");render()})});
+    document.querySelectorAll(".preset").forEach(function(btn){btn.addEventListener("click",function(){var all=Core.computeMetrics(records),max=all.maxDate,min=all.minDate,start=min;if(btn.dataset.range==="day")start=new Date(max.getFullYear(),max.getMonth(),max.getDate());if(btn.dataset.range==="7")start=new Date(max.getTime()-6*86400000);if(btn.dataset.range==="30")start=new Date(max.getTime()-29*86400000);if(btn.dataset.range==="month")start=new Date(max.getFullYear(),max.getMonth(),1);$("startDate").value=isoDate(start);$("endDate").value=isoDate(max);setPresetActive(btn.dataset.range);render()})});
+    $("dailyFilterBtn").addEventListener("click",function(){var date=this.dataset.date;if(!date)return;$("startDate").value=date;$("endDate").value=date;setPresetActive("day");render()});
+    $("clearFilters").addEventListener("click",function(){var all=Core.computeMetrics(records);$("startDate").value=isoDate(all.minDate);$("endDate").value=isoDate(all.maxDate);["userFilter","levelFilter","bankFilter","procedureFilter","conformityFilter","equipmentFilter","companyFilter"].forEach(function(id){$(id).value="Todos"});onlyReprovedMode=false;setPresetActive("all");render()});
     
-/* ===== USUÁRIO DE IMPORTAÇÃO =====
-   Altere SOMENTE estes dois valores para trocar o acesso. */
-var IMPORT_LOGIN = {
-  usuario: "danubia.silva",
-  senha: "logistica124"
-};
+    // Credenciais fixas definidas no próprio código.
+    // Altere estes dois valores conforme necessário.
+    var IMPORT_LOGIN_USER="danubia.silva";
+    var IMPORT_LOGIN_PASS="logistica124";
 
-var usuarioLogado = false;
+    var pendingImportAction=null;
 
-function abrirLogin() {
-  var overlay = document.getElementById("loginOverlay");
-  var user = document.getElementById("loginUser");
-  var pass = document.getElementById("loginPassword");
-  var error = document.getElementById("loginError");
-
-  if (!overlay) return;
-  overlay.classList.add("open");
-  overlay.setAttribute("aria-hidden", "false");
-  if (error) error.classList.remove("show");
-  if (pass) pass.value = "";
-  if (user) {
-    user.focus();
-    user.select();
-  }
-}
-
-function fecharLogin() {
-  var overlay = document.getElementById("loginOverlay");
-  if (!overlay) return;
-  overlay.classList.remove("open");
-  overlay.setAttribute("aria-hidden", "true");
-}
-
-function fazerLogin() {
-  var user = document.getElementById("loginUser").value.trim();
-  var pass = document.getElementById("loginPassword").value;
-  var error = document.getElementById("loginError");
-
-  if (user === IMPORT_LOGIN.usuario && pass === IMPORT_LOGIN.senha) {
-    usuarioLogado = true;
-    fecharLogin();
-    atualizarEstadoImportacao();
-    return true;
-  }
-
-  if (error) error.classList.add("show");
-  document.getElementById("loginPassword").focus();
-  return false;
-}
-
-function fazerLogout() {
-  usuarioLogado = false;
-  atualizarEstadoImportacao();
-}
-
-function exigirLoginParaImportar(callback) {
-  if (usuarioLogado) {
-    if (typeof callback === "function") callback();
-    return;
-  }
-
-  abrirLogin();
-  window.__aposLogin = callback || null;
-}
-
-function atualizarEstadoImportacao() {
-  var logout = document.getElementById("logoutBtn");
-  if (logout) logout.style.display = usuarioLogado ? "" : "none";
-}
-
-/* Eventos da tela de login */
-document.addEventListener("DOMContentLoaded", function() {
-  var submit = document.getElementById("loginSubmitBtn");
-  var cancel = document.getElementById("loginCancelBtn");
-  var user = document.getElementById("loginUser");
-  var pass = document.getElementById("loginPassword");
-
-  if (submit) submit.addEventListener("click", function() {
-    if (fazerLogin()) {
-      var cb = window.__aposLogin;
-      window.__aposLogin = null;
-      if (typeof cb === "function") cb();
+    function openLogin(action){
+      pendingImportAction=action||null;
+      $("loginUser").value="";
+      $("loginPass").value="";
+      $("loginError").classList.remove("show");
+      $("loginOverlay").classList.add("show");
+      $("loginOverlay").setAttribute("aria-hidden","false");
+      setTimeout(function(){$("loginUser").focus()},50);
     }
-  });
 
-  if (cancel) cancel.addEventListener("click", function() {
-    window.__aposLogin = null;
-    fecharLogin();
-  });
+    function closeLogin(){
+      pendingImportAction=null;
+      $("loginOverlay").classList.remove("show");
+      $("loginOverlay").setAttribute("aria-hidden","true");
+    }
 
-  [user, pass].forEach(function(el) {
-    if (el) el.addEventListener("keydown", function(e) {
-      if (e.key === "Enter") {
-        e.preventDefault();
-        if (fazerLogin()) {
-          var cb = window.__aposLogin;
-          window.__aposLogin = null;
-          if (typeof cb === "function") cb();
-        }
-      }
-      if (e.key === "Escape") {
-        window.__aposLogin = null;
-        fecharLogin();
+    $("loginCancel").addEventListener("click",closeLogin);
+    $("loginOverlay").addEventListener("click",function(e){if(e.target===this)closeLogin()});
+    $("loginForm").addEventListener("submit",function(e){
+      e.preventDefault();
+      var user=$("loginUser").value.trim();
+      var pass=$("loginPass").value;
+      if(user===IMPORT_LOGIN_USER && pass===IMPORT_LOGIN_PASS){
+        var action=pendingImportAction;
+        closeLogin();
+        if(action) action();
+      }else{
+        $("loginError").classList.add("show");
+        $("loginPass").focus();
       }
     });
-  });
 
-  atualizarEstadoImportacao();
-});
-
-$("importBtn").addEventListener("click", function(){
-  exigirLoginParaImportar(function(){ $("fileInput").click(); });
-});$("fileInput").addEventListener("change",function(){if(this.files[0])importFile(this.files[0])});$("equipmentImportBtn").addEventListener("click", function(){
-  exigirLoginParaImportar(function(){ $("equipmentFileInput").click(); });
-});$("equipmentFileInput").addEventListener("change",function(){if(this.files[0])importEquipmentFile(this.files[0])});$("exportBtn").addEventListener("click",exportCSV);$("onlyReproved").addEventListener("click",function(){onlyReprovedMode=!onlyReprovedMode;render()});
+    // A visualização do dashboard continua livre. O login só é exigido para importações.
+    $("importBtn").addEventListener("click",function(){
+      openLogin(function(){$("fileInput").click()});
+    });
+    $("fileInput").addEventListener("change",function(){if(this.files[0])importFile(this.files[0])});
+$("equipmentImportBtn").addEventListener("click",function(){
+      openLogin(function(){$("equipmentFileInput").click()});
+    });
+    $("equipmentFileInput").addEventListener("change",function(){if(this.files[0])importEquipmentFile(this.files[0])});$("exportBtn").addEventListener("click",exportCSV);$("onlyReproved").addEventListener("click",function(){onlyReprovedMode=!onlyReprovedMode;render()});
     try{loadRows(INITIAL_ROWS,INITIAL_FILE)}catch(error){showToast(error.message,true)}
   })();
   </script>
-
-<!-- ===== LOGIN PARA IMPORTAÇÃO ===== -->
-<div id="loginOverlay" class="login-overlay" aria-hidden="true">
-  <div class="login-card" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
-    <h2 id="loginTitle">Acesso para importar</h2>
-    <p>Faça login para importar uma nova base.</p>
-
-    <label for="loginUser">Usuário</label>
-    <input id="loginUser" type="text" autocomplete="username" placeholder="Usuário">
-
-    <label for="loginPassword">Senha</label>
-    <input id="loginPassword" type="password" autocomplete="current-password" placeholder="Senha">
-
-    <div id="loginError" class="login-error">Usuário ou senha incorretos.</div>
-
-    <div class="login-actions">
-      <button type="button" id="loginCancelBtn">Cancelar</button>
-      <button type="button" id="loginSubmitBtn">Entrar</button>
-    </div>
-  </div>
-</div>
-
-
-document.addEventListener("DOMContentLoaded", function() {
-  var logout = document.getElementById("logoutBtn");
-  if (logout) logout.addEventListener("click", fazerLogout);
-});
-
 </body>
 </html>
